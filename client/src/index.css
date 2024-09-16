@@ -1,0 +1,21 @@
+/* src/index.css or tailwind.config.js */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    @apply transition duration-300 ease-in-out transform hover:bg-blue-700;
+  }
+
+  .container {
+    @apply mx-auto px-4;
+  }
+
+  .text-gradient {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
